@@ -1,0 +1,88 @@
+version: '3.8'
+
+services:
+  # Frontend Service
+  frontend:
+    build:
+      context: ./rm-frontend
+      dockerfile: Dockerfile
+    container_name: rm-frontend
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - backend
+    networks:
+      - rm-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+  # Backend Service
+  backend:
+    build:
+      context: ./rm-backend
+      dockerfile: Dockerfile
+    container_name: rm-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - PYTHONUNBUFFERED=1
+      - CORS_ALLOW_ORIGINS=http://localhost:5000,http://frontend:5000
+      - DATABASE_URL=sqlite:////app/data/app.db
+      # For Azure SQL, uncomment and set:
+      # - AZURE_SQL_SERVER=${AZURE_SQL_SERVER}
+      # - AZURE_SQL_DATABASE=${AZURE_SQL_DATABASE}
+      # - AZURE_SQL_USERNAME=${AZURE_SQL_USERNAME}
+      # - AZURE_SQL_PASSWORD=${AZURE_SQL_PASSWORD}
+    volumes:
+      - ./backend/data:/app/data
+    depends_on:
+      - database
+    networks:
+      - rm-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/docs"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Database Service
+  database:
+    build:
+      context: ./rm-database
+      dockerfile: Dockerfile
+    container_name: rm-database
+    environment:
+      - DATABASE_TYPE=sqlite
+      - DATABASE_PATH=/app/data
+      # For Azure SQL:
+      # - DATABASE_TYPE=azure_sql
+      # - AZURE_SQL_SERVER=${AZURE_SQL_SERVER}
+      # - AZURE_SQL_DATABASE=${AZURE_SQL_DATABASE}
+      # - AZURE_SQL_USERNAME=${AZURE_SQL_USERNAME}
+      # - AZURE_SQL_PASSWORD=${AZURE_SQL_PASSWORD}
+    volumes:
+      - ./rm-database/data:/app/data
+    networks:
+      - rm-network
+    healthcheck:
+      test: ["CMD", "sqlite3", "/app/data/app.db", "SELECT 1;"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+networks:
+  rm-network:
+    driver: bridge
+
+volumes:
+  database_data:
+    driver: local
