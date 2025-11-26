@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Management Dashboard - Professional UI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        header {
+            padding: 4rem 0;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 1rem 0;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #ddd;
+        }
+
+        /* Buttons */
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        button, .btn {
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+        }
+
+        .btn-tertiary {
+            background: #4ecdc4;
+            color: white;
+        }
+
+        .btn-tertiary:hover {
+            background: #3bb8af;
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 0;
+            margin: 2rem 0;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Feature Cards */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s;
+        }
+
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: #ddd;
+            font-size: 0.95rem;
+        }
+
+        .card ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .card li {
+            margin: 0.5rem 0;
+            color: #ddd;
+            display: flex;
+            align-items: center;
+        }
+
+        .card li::before {
+            content: '✓';
+            color: #4ecdc4;
+            font-weight: bold;
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        /* Highlight Cards */
+        .highlight-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .highlight-card h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .highlight-card p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Gradient Boxes */
+        .gradient-box-1 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .gradient-box-2 {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .gradient-box-3 {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .gradient-box-4 {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .stat {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat h3 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat p {
+            color: #ddd;
+            margin-top: 0.5rem;
+        }
+
+        /* Author Box */
+        .author-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .author-box h2 {
+            font-size: 2rem;
+            color: white;
+            -webkit-text-fill-color: white;
+            margin-bottom: 1rem;
+        }
+
+        .author-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .author-box p {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0.5rem 0;
+        }
+
+        .author-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .author-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            padding: 0.5rem 1rem;
+            border: 2px solid white;
+            border-radius: 8px;
+        }
+
+        .author-links a:hover {
+            background: white;
+            color: #667eea;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav h1 {
+                font-size: 1.2rem;
+            }
+
+            nav a {
+                margin: 0 0.5rem;
+                font-size: 0.9rem;
+            }
+
+            section h2 {
+                font-size: 1.8rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            button, .btn {
+                width: 100%;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .card:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .card:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>🚀 Resource Management Dashboard</h1>
+            <div>
+                <a href="#features">Features</a>
+                <a href="#deployment">Deployment</a>
+                <a href="#author">Author</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>🎯 Resource Management Dashboard</h1>
+            <p>A Complete Full-Stack Solution: React Frontend + FastAPI Backend + Azure/SQL Database</p>
+            <div class="button-group">
+                <a href="https://github.com/Riteshatri/resource-management-project" class="btn btn-primary">📘 View on GitHub</a>
+                <a href="https://github.com/Riteshatri/resource-management-frontend" class="btn btn-secondary">📗 Frontend Repo</a>
+                <a href="https://github.com/Riteshatri/resource-management-backend" class="btn btn-tertiary">📕 Backend Repo</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="features">
+        <div class="container">
+            <h2>✨ Features at a Glance</h2>
+            
+            <div class="features-grid">
+                <div class="card">
+                    <h3>🔐 Authentication & Security</h3>
+                    <ul>
+                        <li>Email/Password Registration & Login</li>
+                        <li>Secure JWT Token (30-min expiration)</li>
+                        <li>Bcrypt Password Hashing</li>
+                        <li>Protected Admin Account</li>
+                        <li>Automatic Session Management</li>
+                        <li>Token Refresh Mechanism</li>
+                        <li>Audit Logging</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>👥 User Management</h3>
+                    <ul>
+                        <li>User Registration & Login</li>
+                        <li>Profile Management</li>
+                        <li>Admin User Management</li>
+                        <li>Role Assignment</li>
+                        <li>Protected Admin Account</li>
+                        <li>User List Management</li>
+                        <li>Real-time Updates</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>📦 Resource Management</h3>
+                    <ul>
+                        <li>Create Resources</li>
+                        <li>Edit Resources</li>
+                        <li>Delete Resources</li>
+                        <li>18 Resource Types</li>
+                        <li>Real-time Statistics</li>
+                        <li>Batch Operations</li>
+                        <li>User-specific Resources</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>🎨 Theme Customization</h3>
+                    <ul>
+                        <li>Dark/Light Mode Toggle</li>
+                        <li>Multiple Color Schemes</li>
+                        <li>Persistent Preferences</li>
+                        <li>Real-time Theme Switching</li>
+                        <li>Mobile Optimized</li>
+                        <li>Custom CSS Variables</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>🚀 Performance & Scalability</h3>
+                    <ul>
+                        <li>React 18 + Vite</li>
+                        <li>FastAPI Backend</li>
+                        <li>SQLite/Azure SQL</li>
+                        <li>Real-time Updates</li>
+                        <li>Efficient Caching</li>
+                        <li>Optimized Queries</li>
+                        <li>Production Ready</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>📱 Mobile Responsive</h3>
+                    <ul>
+                        <li>Mobile-First Design</li>
+                        <li>Touch Optimized</li>
+                        <li>All Screen Sizes</li>
+                        <li>Responsive Layout</li>
+                        <li>Fast Loading</li>
+                        <li>PWA Ready</li>
+                        <li>Cross-browser Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="deployment">
+        <div class="container">
+            <h2>🚀 Deployment Options</h2>
+
+            <div class="features-grid">
+                <div class="highlight-card gradient-box-1">
+                    <h3>💻 Local Development</h3>
+                    <p>Run everything on your machine</p>
+                    <ul style="text-align: left; display: inline-block; list-style: none;">
+                        <li>✓ Setup Frontend (5 min)</li>
+                        <li>✓ Setup Backend (5 min)</li>
+                        <li>✓ Setup Database (Auto)</li>
+                        <li>✓ Access: http://localhost:5000</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-card gradient-box-2">
+                    <h3>☁️ Azure VMs (Production)</h3>
+                    <p>Deploy to production servers</p>
+                    <ul style="text-align: left; display: inline-block; list-style: none;">
+                        <li>✓ Frontend on Nginx</li>
+                        <li>✓ Backend on VM</li>
+                        <li>✓ Database on Azure SQL</li>
+                        <li>✓ Full Scalability</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-card gradient-box-3">
+                    <h3>🐳 Docker & Compose</h3>
+                    <p>Containerized deployment</p>
+                    <ul style="text-align: left; display: inline-block; list-style: none;">
+                        <li>✓ Frontend Container</li>
+                        <li>✓ Backend Container</li>
+                        <li>✓ Database Container</li>
+                        <li>✓ docker-compose ready</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-card gradient-box-4">
+                    <h3>⚡ Cloud Platforms</h3>
+                    <p>Deploy anywhere you want</p>
+                    <ul style="text-align: left; display: inline-block; list-style: none;">
+                        <li>✓ AWS EC2 Compatible</li>
+                        <li>✓ Google Cloud Ready</li>
+                        <li>✓ Heroku Support</li>
+                        <li>✓ Kubernetes Ready</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <h3>3</h3>
+                    <p>Repositories</p>
+                </div>
+                <div class="stat">
+                    <h3>100%</h3>
+                    <p>Responsive</p>
+                </div>
+                <div class="stat">
+                    <h3>18</h3>
+                    <p>Resource Types</p>
+                </div>
+                <div class="stat">
+                    <h3>2</h3>
+                    <p>Database Engines</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="author">
+        <div class="container">
+            <div class="author-box">
+                <h2>👨‍💻 Built by Ritesh Sharma</h2>
+                <h3>Full-Stack Developer | Cloud Architect | DevOps Engineer</h3>
+                <p>Tech: Azure | Terraform | CI/CD | Cloud Automation | React | FastAPI | Database Design</p>
+
+                <div class="author-links">
+                    <a href="https://www.linkedin.com/in/riteshatri" target="_blank">🔗 LinkedIn</a>
+                    <a href="https://github.com/Riteshatri" target="_blank">🐙 GitHub</a>
+                </div>
+
+                <h3 style="margin-top: 2rem; font-size: 1.2rem;">⭐ All 4 Repositories</h3>
+                <p style="margin-top: 1rem;">
+                    📘 <a href="https://github.com/Riteshatri/resource-management-project" style="color: white; text-decoration: underline;">resource-management-project</a> (Main)<br>
+                    📗 <a href="https://github.com/Riteshatri/resource-management-frontend" style="color: white; text-decoration: underline;">resource-management-frontend</a> (React UI)<br>
+                    📕 <a href="https://github.com/Riteshatri/resource-management-backend" style="color: white; text-decoration: underline;">resource-management-backend</a> (FastAPI)<br>
+                    📙 <a href="https://github.com/Riteshatri/resource-management-database" style="color: white; text-decoration: underline;">resource-management-database</a> (SQL & Azure)
+                </p>
+
+                <p style="margin-top: 2rem; font-size: 1rem;">
+                    ⭐ Please star all 4 repositories if you found this helpful!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Ritesh Sharma. All rights reserved.</p>
+        <p>Resource Management Dashboard - Production Ready | MIT License</p>
+    </footer>
+</body>
+</html>
