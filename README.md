@@ -1,4 +1,4 @@
-[![Open UI](https://img.shields.io/badge/View%20Full%20UI-GitHub%20Pages-blue?style=for-the-badge)](https://<USERNAME>.github.io/<REPO>/)
+[![Open UI](https://img.shields.io/badge/View%20Full%20UI-GitHub%20Pages-blue?style=for-the-badge)](https://riteshatri.github.io/resource-management-project/)
 
 > For the full UI (colored cards & gradients), open the GitHub Pages site above.
 
