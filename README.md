@@ -20,43 +20,16 @@
 
 ## ⚡ Why Choose This Platform?
 
-<table>
-<tr>
-<td>
-
-### 🎯 **Smart & Intuitive**
-- One-click resource management
-- Drag-and-drop interface
-- Real-time updates
-- Intelligent search & filters
-
-</td>
-<td>
-
-### 🔒 **Enterprise Security**
-- Military-grade encryption (JWT)
-- Role-based access control
-- Protected admin accounts
-- Audit trails & logging
-
-</td>
-<td>
-
-### ⚙️ **Built for Scale**
-- Multi-user support
-- 1000+ resource capacity
-- High availability ready
-- Auto-scaling architecture
-
-</td>
-</tr>
-</table>
+| 🎯 Smart & Intuitive | 🔒 Enterprise Security | ⚙️ Built for Scale |
+|---|---|---|
+| One-click resource management | Military-grade encryption (JWT) | Multi-user support |
+| Drag-and-drop interface | Role-based access control | 1000+ resource capacity |
+| Real-time updates | Protected admin accounts | High availability ready |
+| Intelligent search & filters | Audit trails & logging | Auto-scaling architecture |
 
 ---
 
 ## 📊 Quick Stats
-
-<div align="left">
 
 | Metric | Value |
 |--------|-------|
@@ -66,16 +39,13 @@
 | **Uptime** | 99.9% |
 | **Mobile Ready** | 100% |
 
-</div>
-
 ---
 
 ## 🎨 Features at a Glance
 
 ### ✨ Authentication & Security
-> **JWT tokens, bcrypt hashing, protected admin account & audit logging**
 
-<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; padding: 20px; color: white; margin: 15px 0;">
+> **JWT tokens, bcrypt hashing, protected admin account & audit logging**
 
 - ✅ Email/Password Registration & Login
 - ✅ Secure JWT Token (30-min expiration)
@@ -85,28 +55,22 @@
 - ✅ Token Refresh Mechanism
 - ✅ Audit Logging of All Auth Events
 
-</div>
-
 ---
 
 ### 👥 Role-Based Access Control
-> **Admin/User roles, permission levels, protected admin account system**
 
-<div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 8px; padding: 20px; color: white; margin: 15px 0;">
+> **Admin/User roles, permission levels, protected admin account system**
 
 | Role | Capabilities | Who Can Access |
 |------|---|---|
 | **👤 User** | Create own resources, Edit own profile, View own resources | Regular users |
 | **🔑 Admin** | Everything + Manage all users, Assign roles, System-wide visibility | Administrators only |
 
-</div>
-
 ---
 
 ### 📦 Resource Management
-> **18 resource types, CRUD operations, metadata, real-time updates**
 
-<div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 8px; padding: 20px; color: #1a1a1a; margin: 15px 0;">
+> **18 resource types, CRUD operations, metadata, real-time updates**
 
 - **18 Resource Types**: Servers, Databases, Storage, CDN, Networks, etc.
 - **Rich Metadata**: Title, Name, Description, Status, Region
@@ -114,50 +78,39 @@
 - **Batch Operations**: Manage multiple resources at once
 - **Smart Search**: Filter by name, status, or region
 
-</div>
-
 ---
 
 ### 🎨 Theme & Customization
-> **Dark/Light modes, persistent storage, real-time switching**
 
-<div style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); border-radius: 8px; padding: 20px; color: #1a1a1a; margin: 15px 0;">
+> **Dark/Light modes, persistent storage, real-time switching**
 
 - **Light Mode**: Clean, professional, high contrast
 - **Dark Mode**: Easy on the eyes, battery-efficient
 - **Persistent**: Your preference saved to database
 - **Real-time Switch**: No page reload needed
 
-</div>
-
 ---
 
 ### 📱 Mobile Responsiveness
-> **100% responsive design, touch-optimized, all devices (320px+)**
 
-<div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 8px; padding: 20px; color: #1a1a1a; margin: 15px 0;">
+> **100% responsive design, touch-optimized, all devices (320px+)**
 
 - **Desktop** (1024px+): Full-featured UI
 - **Tablet** (768-1024px): Optimized layout
 - **Mobile** (320-768px): Touch-friendly controls
 - **All devices**: Consistent experience
 
-</div>
-
 ---
 
 ### 📊 Dashboard & Analytics
-> **Real-time insights, resource counts, status breakdown**
 
-<div style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%); border-radius: 8px; padding: 20px; color: white; margin: 15px 0;">
+> **Real-time insights, resource counts, status breakdown**
 
 - **Resource Count**: Total active resources
 - **Status Breakdown**: Running, Stopped, Pending
 - **Quick Actions**: Create, view, manage
 - **User Greeting**: Personalized welcome
 - **Status Overview**: Resource health at a glance
-
-</div>
 
 ---
 
@@ -253,8 +206,6 @@ Resource-Management-Project/
 
 ## 🔒 Security & Trust
 
-<div style="background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%); border-radius: 8px; padding: 20px; color: white; margin: 20px 0;">
-
 ### 🛡️ Enterprise-Grade Security
 
 ✅ **JWT Tokens** - Secure, time-limited authentication  
@@ -266,13 +217,9 @@ Resource-Management-Project/
 ✅ **Audit Logging** - Track all user actions  
 ✅ **HTTPS Ready** - SSL/TLS certificate support  
 
-</div>
-
 ---
 
 ## 📈 Performance Metrics
-
-<div align="left">
 
 | Metric | Value | Status |
 |--------|-------|--------|
@@ -283,8 +230,6 @@ Resource-Management-Project/
 | **Database Queries** | < 50ms | ✅ Quick |
 | **Uptime SLA** | 99.9% | ✅ Reliable |
 
-</div>
-
 ---
 
 # 🎯 **Project Structure: 3 Main Repositories**
@@ -294,8 +239,6 @@ Resource-Management-Project/
 ---
 
 ## 📘 Repository 1: RM-Frontend
-
-<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; padding: 30px; color: white; margin: 25px 0; border-left: 6px solid #667eea; box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);">
 
 ### ⚛️ **React 18 + Vite Frontend**
 
@@ -322,19 +265,11 @@ cd resource-management-frontend
 npm install && npm run dev
 ```
 
-<div align="center" style="margin-top: 20px;">
-
 ### 👉 **[Visit RM-Frontend Repository →](https://github.com/Riteshatri/resource-management-frontend)**
-
-</div>
-
-</div>
 
 ---
 
 ## 🔧 Repository 2: RM-Backend
-
-<div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 12px; padding: 30px; color: white; margin: 25px 0; border-left: 6px solid #f093fb; box-shadow: 0 8px 16px rgba(240, 147, 251, 0.4);">
 
 ### ⚙️ **FastAPI + Python Backend**
 
@@ -364,19 +299,11 @@ python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt && python run.py
 ```
 
-<div align="center" style="margin-top: 20px;">
-
 ### 👉 **[Visit RM-Backend Repository →](https://github.com/Riteshatri/resource-management-backend)**
-
-</div>
-
-</div>
 
 ---
 
 ## 💾 Repository 3: RM-Database
-
-<div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 12px; padding: 30px; color: #1a1a1a; margin: 25px 0; border-left: 6px solid #4facfe; box-shadow: 0 8px 16px rgba(79, 172, 254, 0.4);">
 
 ### 🗄️ **SQL Database + Azure Setup**
 
@@ -404,13 +331,7 @@ git clone https://github.com/Riteshatri/resource-management-database.git
 # SQLite auto-creates, or use Azure SQL scripts
 ```
 
-<div align="center" style="margin-top: 20px;">
-
 ### 👉 **[Visit RM-Database Repository →](https://github.com/Riteshatri/resource-management-database)**
-
-</div>
-
-</div>
 
 ---
 
@@ -488,10 +409,6 @@ docker-compose down
 
 ## ✨ Complete Feature List
 
-<table>
-<tr>
-<td>
-
 ### 🎯 **User Management**
 - ✅ User registration & login
 - ✅ Profile management
@@ -499,9 +416,6 @@ docker-compose down
 - ✅ Role assignment
 - ✅ Protected admin account
 - ✅ Session management
-
-</td>
-<td>
 
 ### 📦 **Resource Management**
 - ✅ Create resources
@@ -511,9 +425,6 @@ docker-compose down
 - ✅ Real-time updates
 - ✅ Batch operations
 
-</td>
-<td>
-
 ### 🎨 **Customization**
 - ✅ Dark/Light themes
 - ✅ Persistent preferences
@@ -521,10 +432,6 @@ docker-compose down
 - ✅ Responsive design
 - ✅ Mobile optimized
 - ✅ Real-time switching
-
-</td>
-</tr>
-</table>
 
 ---
 
@@ -603,8 +510,6 @@ This project is licensed under the **MIT License** - see LICENSE file for detail
 
 ---
 
-<div align="center">
-
 ## 🎯 **Next Steps**
 
 ### **Choose Your Journey:**
@@ -622,7 +527,7 @@ If you found this helpful, please star this repo! ⭐
 
 ---
 
-<div align="center" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; padding: 30px; margin: 25px 0;">
+<div align="center">
 
 ## 👨‍💻 **Author**
 
@@ -632,11 +537,13 @@ If you found this helpful, please star this repo! ⭐
 
 **Tech:** Azure | Terraform | CI/CD | Cloud Automation | React | FastAPI | Database Design
 
-<div style="margin: 20px 0; display: flex; gap: 15px; justify-content: center;">
+---
 
-**[🔗 LINKEDIN](https://www.linkedin.com/in/riteshatri)** | **[🐙 GITHUB](https://github.com/Riteshatri)**
+### **Connect with me:**
 
-</div>
+🔗 **[LinkedIn](https://www.linkedin.com/in/riteshatri)** • 🐙 **[GitHub](https://github.com/Riteshatri)**
+
+---
 
 ### **All 4 Repositories:**
 
@@ -645,15 +552,15 @@ If you found this helpful, please star this repo! ⭐
 - 📕 **[resource-management-backend](https://github.com/Riteshatri/resource-management-backend)** - FastAPI + Python ⭐
 - 📙 **[resource-management-database](https://github.com/Riteshatri/resource-management-database)** - SQL + Azure ⭐
 
-**⭐ Please star all 4 repositories if you found this helpful!**
+---
 
-</div>
+⭐ **Please star all 4 repositories if you found this helpful!**
 
 ---
 
 ### 🌟 **Built with ❤️ for Cloud Professionals**
 
-**Your complete resource management solution - from UI to database!**
+Your complete resource management solution - from UI to database!
 
 [⬆ Back to Top](#top) • [Report Issue](https://github.com/Riteshatri/resource-management-project/issues) • [Request Feature](https://github.com/Riteshatri/resource-management-project/issues)
 
