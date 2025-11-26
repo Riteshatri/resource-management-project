@@ -1,10 +1,4 @@
-[![Open UI](https://img.shields.io/badge/View%20Full%20UI-GitHub%20Pages-blue?style=for-the-badge)](https://riteshatri.github.io/resource-management-project/)
-
-> For the full UI (colored cards & gradients), open the GitHub Pages site above.
-
-
-
-<h1 id="top">🚀 Resource Management Dashboard </h1>
+<h1 id="top">🚀 Resource Management Dashboard</h1>
 
 <div align="left">
 
@@ -12,6 +6,7 @@
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 ![Build](https://img.shields.io/badge/Build-Passing-success?style=flat-square)
+![Mobile Ready](https://img.shields.io/badge/Mobile-100%25%20Responsive-brightblue?style=flat-square)
 
 **Enterprise-Grade Cloud Resource Management Platform**
 
@@ -292,9 +287,7 @@ Resource-Management-Project/
 
 ---
 
----
-
-# 🎯 **Project Structure Of Resource Management (RM): 3 Main Repositories**
+# 🎯 **Project Structure: 3 Main Repositories**
 
 **This showcase repository links to THREE specialized sub-repositories. Each handles a specific part of the stack!**
 
@@ -326,21 +319,12 @@ Resource-Management-Project/
 ```bash
 git clone https://github.com/Riteshatri/resource-management-frontend.git
 cd resource-management-frontend
-npm install
-npm run dev
+npm install && npm run dev
 ```
-
-**Perfect For:**
-- Frontend developers
-- Learning React best practices
-- Building UI-heavy applications
-- Responsive web design
 
 <div align="center" style="margin-top: 20px;">
 
 ### 👉 **[Visit RM-Frontend Repository →](https://github.com/Riteshatri/resource-management-frontend)**
-
-**Get the complete frontend setup guide, component library, and deployment instructions!**
 
 </div>
 
@@ -371,33 +355,18 @@ npm run dev
 - Async/await programming
 - Production deployment strategies
 - Azure SQL integration
-- API documentation with Swagger
 
 **Quick Start:**
 ```bash
 git clone https://github.com/Riteshatri/resource-management-backend.git
 cd resource-management-backend
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python run.py
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt && python run.py
 ```
-
-**API Documentation:**
-- Auto-generated Swagger UI: `http://localhost:8000/docs`
-- ReDoc: `http://localhost:8000/redoc`
-
-**Perfect For:**
-- Backend developers
-- Learning FastAPI
-- Understanding authentication
-- API design patterns
 
 <div align="center" style="margin-top: 20px;">
 
 ### 👉 **[Visit RM-Backend Repository →](https://github.com/Riteshatri/resource-management-backend)**
-
-**Get the complete backend setup, Azure SQL integration, and API reference!**
 
 </div>
 
@@ -409,59 +378,35 @@ python run.py
 
 <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 12px; padding: 30px; color: #1a1a1a; margin: 25px 0; border-left: 6px solid #4facfe; box-shadow: 0 8px 16px rgba(79, 172, 254, 0.4);">
 
-### 🗄️ **Database Schema & Setup**
+### 🗄️ **SQL Database + Azure Setup**
 
 **What's Inside:**
-- Complete SQL schema for all tables
-- Database initialization scripts
-- Sample data (seed files)
-- Migration scripts
-- Azure SQL setup guide (step-by-step)
-- SQLite to Azure SQL migration guide
+- Complete database schema
+- SQLite setup scripts
+- Azure SQL configuration
+- Migration scripts with Alembic
+- Seed data for testing
 - Performance optimization queries
-- Backup & recovery scripts
-
-**Database Tables:**
-1. **users** - User accounts, roles, profiles
-2. **resources** - Cloud resources with metadata
-3. **themes** - User theme preferences
-4. **audit_logs** - System activity tracking
+- Backup & recovery procedures
 
 **You'll Learn:**
-- Database schema design
+- Database design & normalization
 - SQL query optimization
-- Azure SQL setup & configuration
-- Data migration strategies
-- Backup procedures
-- Performance tuning
+- Azure SQL setup & management
+- Database migrations
+- Backup strategies
+- Production database setup
 
-**Azure SQL Setup (2 Minutes):**
+**Quick Start:**
 ```bash
-# 1. Create resource group
-az group create --name rmd-prod --location eastus
-
-# 2. Create SQL server
-az sql server create \
-  --name rmd-sql-$(date +%s) \
-  --resource-group rmd-prod \
-  --admin-user sqladmin
-
-# 3. Run schema scripts from this repo
-# 4. Configure firewall & environment variables
-# 5. Done! Connected to cloud database
+git clone https://github.com/Riteshatri/resource-management-database.git
+# Follow setup guide in README
+# SQLite auto-creates, or use Azure SQL scripts
 ```
-
-**Perfect For:**
-- Database administrators
-- SQL developers
-- Learning Azure SQL
-- Database design patterns
 
 <div align="center" style="margin-top: 20px;">
 
 ### 👉 **[Visit RM-Database Repository →](https://github.com/Riteshatri/resource-management-database)**
-
-**Get complete database schemas, Azure setup guides, and migration scripts!**
 
 </div>
 
@@ -503,11 +448,27 @@ pip install -r requirements.txt && python run.py
 # 4. Connect all three via environment variables
 ```
 
-### **Option 3: Containerized (Docker)**
+### **Option 3: Containerized (Docker + Docker Compose)**
 ```bash
-# Each repo includes Dockerfile
-# Pull from RM-Frontend, RM-Backend, RM-Database
-# Compose them together with docker-compose.yml
+# Clone all 3 repos and the docker-compose.yml
+git clone https://github.com/Riteshatri/resource-management-project.git
+cd resource-management-project
+
+# Make sure you have Dockerfile in each repo:
+#   ✅ rm-frontend/Dockerfile
+#   ✅ rm-backend/Dockerfile
+#   ✅ rm-database/Dockerfile
+
+# Run all services
+docker-compose up -d
+
+# Access:
+#   Frontend: http://localhost:5000
+#   Backend: http://localhost:8000/docs
+#   Database: SQLite (local) or Azure SQL (production)
+
+# Stop all services
+docker-compose down
 ```
 
 ---
@@ -572,6 +533,7 @@ pip install -r requirements.txt && python run.py
 | Platform | Difficulty | Time | Cost |
 |----------|-----------|------|------|
 | **Local** (Your Computer) | Easy | 5 min | $0 |
+| **Replit** (Cloud IDE) | Easy | 3 min | Free/Paid |
 | **Azure VMs** (Production) | Medium | 30 min | $30-50/month |
 | **AWS EC2** | Medium | 30 min | $20-40/month |
 | **Google Cloud** | Medium | 30 min | $25-45/month |
@@ -641,7 +603,7 @@ This project is licensed under the **MIT License** - see LICENSE file for detail
 
 ---
 
-<div align="left">
+<div align="center">
 
 ## 🎯 **Next Steps**
 
@@ -654,25 +616,27 @@ This project is licensed under the **MIT License** - see LICENSE file for detail
 
 ---
 
+## ⭐ **Love This Project? Give it a Star!**
 
-<div align="left" style="background: #454868bc; border-radius: 12px; padding: 30px; margin: 25px 0;">
+If you found this helpful, please star this repo! ⭐
+
+---
+
+<div align="center" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; padding: 30px; margin: 25px 0;">
 
 ## 👨‍💻 **Author**
 
-### **_[Ritesh Sharma](https://www.linkedin.com/in/riteshatri/)_**
+### **Ritesh Sharma**
 
-### 💼 *DevOps Engineer | Cloud Architect | Azure | Terraform | CI/CD | Cloud Automation*
- **_Tech :_**   **Azure | Terraform | CI/CD (_Github Action | Azure DevOps_) | Cloud Automation**
+🎯 *Full-Stack Developer | Cloud Architect | DevOps Engineer*
 
-<!-- <div style="margin: 5px 0; display: flex; gap: 30px; justify-content: left;">  -->
+**Tech:** Azure | Terraform | CI/CD | Cloud Automation | React | FastAPI | Database Design
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/riteshatri)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Riteshatri)  
-![GitHub followers](https://img.shields.io/github/followers/riteshatri?label=Follow%20Me&style=social)
-![GitHub stars](https://img.shields.io/github/stars/riteshatri/devops-interview-guide?style=social)
----
+<div style="margin: 20px 0; display: flex; gap: 15px; justify-content: center;">
 
-<!-- </div> -->
+**[🔗 LINKEDIN](https://www.linkedin.com/in/riteshatri)** | **[🐙 GITHUB](https://github.com/Riteshatri)**
+
+</div>
 
 ### **All 4 Repositories:**
 
@@ -687,24 +651,12 @@ This project is licensed under the **MIT License** - see LICENSE file for detail
 
 ---
 
-<div align="center" style="background: #4548682f; border-radius: 12px; padding: 30px; margin: 25px 0;">
+### 🌟 **Built with ❤️ for Cloud Professionals**
 
-### <h1>🌟 **_Built with ❤️ for Cloud Professionals_**</h1>  
-**_Your complete resource management solution - from UI to database!_**
-
-
-### ⭐ **Love This Project? Give it a Star!**
-
-If you found this helpful, please star this repo! ⭐
-
----
-
-
-</div>
-
-<div align="center">
+**Your complete resource management solution - from UI to database!**
 
 [⬆ Back to Top](#top) • [Report Issue](https://github.com/Riteshatri/resource-management-project/issues) • [Request Feature](https://github.com/Riteshatri/resource-management-project/issues)
 
-**v1.0.0** • Last Updated: November 25, 2025 • Status: ✅ Production Ready
+**v1.0.0** • Last Updated: November 26, 2025 • Status: ✅ Production Ready
+
 </div>
