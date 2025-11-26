@@ -1,3 +1,9 @@
+[![Open UI](https://img.shields.io/badge/View%20Full%20UI-GitHub%20Pages-blue?style=for-the-badge)](https://<USERNAME>.github.io/<REPO>/)
+
+> For the full UI (colored cards & gradients), open the GitHub Pages site above.
+
+
+
 <h1 id="top">🚀 Resource Management Dashboard </h1>
 
 <div align="left">
