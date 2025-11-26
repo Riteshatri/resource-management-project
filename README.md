@@ -1,4 +1,4 @@
-<h1 id="top">🚀 Resource Management Dashboard</h1>
+<h1 id="top">🚀 Resource Management Dashboard </h1>
 
 <div align="left">
 
@@ -6,7 +6,6 @@
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 ![Build](https://img.shields.io/badge/Build-Passing-success?style=flat-square)
-![Mobile Ready](https://img.shields.io/badge/Mobile-100%25%20Responsive-brightblue?style=flat-square)
 
 **Enterprise-Grade Cloud Resource Management Platform**
 
@@ -20,16 +19,43 @@
 
 ## ⚡ Why Choose This Platform?
 
-| 🎯 Smart & Intuitive | 🔒 Enterprise Security | ⚙️ Built for Scale |
-|---|---|---|
-| One-click resource management | Military-grade encryption (JWT) | Multi-user support |
-| Drag-and-drop interface | Role-based access control | 1000+ resource capacity |
-| Real-time updates | Protected admin accounts | High availability ready |
-| Intelligent search & filters | Audit trails & logging | Auto-scaling architecture |
+<table>
+<tr>
+<td>
+
+### 🎯 **Smart & Intuitive**
+- One-click resource management
+- Drag-and-drop interface
+- Real-time updates
+- Intelligent search & filters
+
+</td>
+<td>
+
+### 🔒 **Enterprise Security**
+- Military-grade encryption (JWT)
+- Role-based access control
+- Protected admin accounts
+- Audit trails & logging
+
+</td>
+<td>
+
+### ⚙️ **Built for Scale**
+- Multi-user support
+- 1000+ resource capacity
+- High availability ready
+- Auto-scaling architecture
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 📊 Quick Stats
+
+<div align="left">
 
 | Metric | Value |
 |--------|-------|
@@ -39,13 +65,16 @@
 | **Uptime** | 99.9% |
 | **Mobile Ready** | 100% |
 
+</div>
+
 ---
 
 ## 🎨 Features at a Glance
 
 ### ✨ Authentication & Security
-
 > **JWT tokens, bcrypt hashing, protected admin account & audit logging**
+
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; padding: 20px; color: white; margin: 15px 0;">
 
 - ✅ Email/Password Registration & Login
 - ✅ Secure JWT Token (30-min expiration)
@@ -55,22 +84,28 @@
 - ✅ Token Refresh Mechanism
 - ✅ Audit Logging of All Auth Events
 
+</div>
+
 ---
 
 ### 👥 Role-Based Access Control
-
 > **Admin/User roles, permission levels, protected admin account system**
+
+<div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 8px; padding: 20px; color: white; margin: 15px 0;">
 
 | Role | Capabilities | Who Can Access |
 |------|---|---|
 | **👤 User** | Create own resources, Edit own profile, View own resources | Regular users |
 | **🔑 Admin** | Everything + Manage all users, Assign roles, System-wide visibility | Administrators only |
 
+</div>
+
 ---
 
 ### 📦 Resource Management
-
 > **18 resource types, CRUD operations, metadata, real-time updates**
+
+<div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 8px; padding: 20px; color: #1a1a1a; margin: 15px 0;">
 
 - **18 Resource Types**: Servers, Databases, Storage, CDN, Networks, etc.
 - **Rich Metadata**: Title, Name, Description, Status, Region
@@ -78,39 +113,50 @@
 - **Batch Operations**: Manage multiple resources at once
 - **Smart Search**: Filter by name, status, or region
 
+</div>
+
 ---
 
 ### 🎨 Theme & Customization
-
 > **Dark/Light modes, persistent storage, real-time switching**
+
+<div style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); border-radius: 8px; padding: 20px; color: #1a1a1a; margin: 15px 0;">
 
 - **Light Mode**: Clean, professional, high contrast
 - **Dark Mode**: Easy on the eyes, battery-efficient
 - **Persistent**: Your preference saved to database
 - **Real-time Switch**: No page reload needed
 
+</div>
+
 ---
 
 ### 📱 Mobile Responsiveness
-
 > **100% responsive design, touch-optimized, all devices (320px+)**
+
+<div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 8px; padding: 20px; color: #1a1a1a; margin: 15px 0;">
 
 - **Desktop** (1024px+): Full-featured UI
 - **Tablet** (768-1024px): Optimized layout
 - **Mobile** (320-768px): Touch-friendly controls
 - **All devices**: Consistent experience
 
+</div>
+
 ---
 
 ### 📊 Dashboard & Analytics
-
 > **Real-time insights, resource counts, status breakdown**
+
+<div style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%); border-radius: 8px; padding: 20px; color: white; margin: 15px 0;">
 
 - **Resource Count**: Total active resources
 - **Status Breakdown**: Running, Stopped, Pending
 - **Quick Actions**: Create, view, manage
 - **User Greeting**: Personalized welcome
 - **Status Overview**: Resource health at a glance
+
+</div>
 
 ---
 
@@ -206,6 +252,8 @@ Resource-Management-Project/
 
 ## 🔒 Security & Trust
 
+<div style="background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%); border-radius: 8px; padding: 20px; color: white; margin: 20px 0;">
+
 ### 🛡️ Enterprise-Grade Security
 
 ✅ **JWT Tokens** - Secure, time-limited authentication  
@@ -217,9 +265,13 @@ Resource-Management-Project/
 ✅ **Audit Logging** - Track all user actions  
 ✅ **HTTPS Ready** - SSL/TLS certificate support  
 
+</div>
+
 ---
 
 ## 📈 Performance Metrics
+
+<div align="left">
 
 | Metric | Value | Status |
 |--------|-------|--------|
@@ -230,15 +282,21 @@ Resource-Management-Project/
 | **Database Queries** | < 50ms | ✅ Quick |
 | **Uptime SLA** | 99.9% | ✅ Reliable |
 
+</div>
+
 ---
 
-# 🎯 **Project Structure: 3 Main Repositories**
+---
+
+# 🎯 **Project Structure Of Resource Management (RM): 3 Main Repositories**
 
 **This showcase repository links to THREE specialized sub-repositories. Each handles a specific part of the stack!**
 
 ---
 
 ## 📘 Repository 1: RM-Frontend
+
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; padding: 30px; color: white; margin: 25px 0; border-left: 6px solid #667eea; box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);">
 
 ### ⚛️ **React 18 + Vite Frontend**
 
@@ -262,14 +320,31 @@ Resource-Management-Project/
 ```bash
 git clone https://github.com/Riteshatri/resource-management-frontend.git
 cd resource-management-frontend
-npm install && npm run dev
+npm install
+npm run dev
 ```
 
+**Perfect For:**
+- Frontend developers
+- Learning React best practices
+- Building UI-heavy applications
+- Responsive web design
+
+<div align="center" style="margin-top: 20px;">
+
 ### 👉 **[Visit RM-Frontend Repository →](https://github.com/Riteshatri/resource-management-frontend)**
+
+**Get the complete frontend setup guide, component library, and deployment instructions!**
+
+</div>
+
+</div>
 
 ---
 
 ## 🔧 Repository 2: RM-Backend
+
+<div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 12px; padding: 30px; color: white; margin: 25px 0; border-left: 6px solid #f093fb; box-shadow: 0 8px 16px rgba(240, 147, 251, 0.4);">
 
 ### ⚙️ **FastAPI + Python Backend**
 
@@ -290,48 +365,101 @@ npm install && npm run dev
 - Async/await programming
 - Production deployment strategies
 - Azure SQL integration
+- API documentation with Swagger
 
 **Quick Start:**
 ```bash
 git clone https://github.com/Riteshatri/resource-management-backend.git
 cd resource-management-backend
-python -m venv venv && source venv/bin/activate
-pip install -r requirements.txt && python run.py
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python run.py
 ```
 
+**API Documentation:**
+- Auto-generated Swagger UI: `http://localhost:8000/docs`
+- ReDoc: `http://localhost:8000/redoc`
+
+**Perfect For:**
+- Backend developers
+- Learning FastAPI
+- Understanding authentication
+- API design patterns
+
+<div align="center" style="margin-top: 20px;">
+
 ### 👉 **[Visit RM-Backend Repository →](https://github.com/Riteshatri/resource-management-backend)**
+
+**Get the complete backend setup, Azure SQL integration, and API reference!**
+
+</div>
+
+</div>
 
 ---
 
 ## 💾 Repository 3: RM-Database
 
-### 🗄️ **SQL Database + Azure Setup**
+<div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 12px; padding: 30px; color: #1a1a1a; margin: 25px 0; border-left: 6px solid #4facfe; box-shadow: 0 8px 16px rgba(79, 172, 254, 0.4);">
+
+### 🗄️ **Database Schema & Setup**
 
 **What's Inside:**
-- Complete database schema
-- SQLite setup scripts
-- Azure SQL configuration
-- Migration scripts with Alembic
-- Seed data for testing
+- Complete SQL schema for all tables
+- Database initialization scripts
+- Sample data (seed files)
+- Migration scripts
+- Azure SQL setup guide (step-by-step)
+- SQLite to Azure SQL migration guide
 - Performance optimization queries
-- Backup & recovery procedures
+- Backup & recovery scripts
+
+**Database Tables:**
+1. **users** - User accounts, roles, profiles
+2. **resources** - Cloud resources with metadata
+3. **themes** - User theme preferences
+4. **audit_logs** - System activity tracking
 
 **You'll Learn:**
-- Database design & normalization
+- Database schema design
 - SQL query optimization
-- Azure SQL setup & management
-- Database migrations
-- Backup strategies
-- Production database setup
+- Azure SQL setup & configuration
+- Data migration strategies
+- Backup procedures
+- Performance tuning
 
-**Quick Start:**
+**Azure SQL Setup (2 Minutes):**
 ```bash
-git clone https://github.com/Riteshatri/resource-management-database.git
-# Follow setup guide in README
-# SQLite auto-creates, or use Azure SQL scripts
+# 1. Create resource group
+az group create --name rmd-prod --location eastus
+
+# 2. Create SQL server
+az sql server create \
+  --name rmd-sql-$(date +%s) \
+  --resource-group rmd-prod \
+  --admin-user sqladmin
+
+# 3. Run schema scripts from this repo
+# 4. Configure firewall & environment variables
+# 5. Done! Connected to cloud database
 ```
 
+**Perfect For:**
+- Database administrators
+- SQL developers
+- Learning Azure SQL
+- Database design patterns
+
+<div align="center" style="margin-top: 20px;">
+
 ### 👉 **[Visit RM-Database Repository →](https://github.com/Riteshatri/resource-management-database)**
+
+**Get complete database schemas, Azure setup guides, and migration scripts!**
+
+</div>
+
+</div>
 
 ---
 
@@ -369,27 +497,11 @@ pip install -r requirements.txt && python run.py
 # 4. Connect all three via environment variables
 ```
 
-### **Option 3: Containerized (Docker + Docker Compose)**
+### **Option 3: Containerized (Docker)**
 ```bash
-# Clone all 3 repos and the docker-compose.yml
-git clone https://github.com/Riteshatri/resource-management-project.git
-cd resource-management-project
-
-# Make sure you have Dockerfile in each repo:
-#   ✅ rm-frontend/Dockerfile
-#   ✅ rm-backend/Dockerfile
-#   ✅ rm-database/Dockerfile
-
-# Run all services
-docker-compose up -d
-
-# Access:
-#   Frontend: http://localhost:5000
-#   Backend: http://localhost:8000/docs
-#   Database: SQLite (local) or Azure SQL (production)
-
-# Stop all services
-docker-compose down
+# Each repo includes Dockerfile
+# Pull from RM-Frontend, RM-Backend, RM-Database
+# Compose them together with docker-compose.yml
 ```
 
 ---
@@ -409,6 +521,10 @@ docker-compose down
 
 ## ✨ Complete Feature List
 
+<table>
+<tr>
+<td>
+
 ### 🎯 **User Management**
 - ✅ User registration & login
 - ✅ Profile management
@@ -416,6 +532,9 @@ docker-compose down
 - ✅ Role assignment
 - ✅ Protected admin account
 - ✅ Session management
+
+</td>
+<td>
 
 ### 📦 **Resource Management**
 - ✅ Create resources
@@ -425,6 +544,9 @@ docker-compose down
 - ✅ Real-time updates
 - ✅ Batch operations
 
+</td>
+<td>
+
 ### 🎨 **Customization**
 - ✅ Dark/Light themes
 - ✅ Persistent preferences
@@ -433,6 +555,10 @@ docker-compose down
 - ✅ Mobile optimized
 - ✅ Real-time switching
 
+</td>
+</tr>
+</table>
+
 ---
 
 ## 🚀 Deployment Options
@@ -440,7 +566,6 @@ docker-compose down
 | Platform | Difficulty | Time | Cost |
 |----------|-----------|------|------|
 | **Local** (Your Computer) | Easy | 5 min | $0 |
-| **Replit** (Cloud IDE) | Easy | 3 min | Free/Paid |
 | **Azure VMs** (Production) | Medium | 30 min | $30-50/month |
 | **AWS EC2** | Medium | 30 min | $20-40/month |
 | **Google Cloud** | Medium | 30 min | $25-45/month |
@@ -510,6 +635,8 @@ This project is licensed under the **MIT License** - see LICENSE file for detail
 
 ---
 
+<div align="left">
+
 ## 🎯 **Next Steps**
 
 ### **Choose Your Journey:**
@@ -521,29 +648,25 @@ This project is licensed under the **MIT License** - see LICENSE file for detail
 
 ---
 
-## ⭐ **Love This Project? Give it a Star!**
 
-If you found this helpful, please star this repo! ⭐
-
----
-
-<div align="center">
+<div align="left" style="background: #454868bc; border-radius: 12px; padding: 30px; margin: 25px 0;">
 
 ## 👨‍💻 **Author**
 
-### **Ritesh Sharma**
+### **_[Ritesh Sharma](https://www.linkedin.com/in/riteshatri/)_**
 
-🎯 *Full-Stack Developer | Cloud Architect | DevOps Engineer*
+### 💼 *DevOps Engineer | Cloud Architect | Azure | Terraform | CI/CD | Cloud Automation*
+ **_Tech :_**   **Azure | Terraform | CI/CD (_Github Action | Azure DevOps_) | Cloud Automation**
 
-**Tech:** Azure | Terraform | CI/CD | Cloud Automation | React | FastAPI | Database Design
+<!-- <div style="margin: 5px 0; display: flex; gap: 30px; justify-content: left;">  -->
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/riteshatri)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Riteshatri)  
+![GitHub followers](https://img.shields.io/github/followers/riteshatri?label=Follow%20Me&style=social)
+![GitHub stars](https://img.shields.io/github/stars/riteshatri/devops-interview-guide?style=social)
 ---
 
-### **Connect with me:**
-
-🔗 **[LinkedIn](https://www.linkedin.com/in/riteshatri)** • 🐙 **[GitHub](https://github.com/Riteshatri)**
-
----
+<!-- </div> -->
 
 ### **All 4 Repositories:**
 
@@ -552,18 +675,30 @@ If you found this helpful, please star this repo! ⭐
 - 📕 **[resource-management-backend](https://github.com/Riteshatri/resource-management-backend)** - FastAPI + Python ⭐
 - 📙 **[resource-management-database](https://github.com/Riteshatri/resource-management-database)** - SQL + Azure ⭐
 
+**⭐ Please star all 4 repositories if you found this helpful!**
+
+</div>
+
 ---
 
-⭐ **Please star all 4 repositories if you found this helpful!**
+<div align="center" style="background: #4548682f; border-radius: 12px; padding: 30px; margin: 25px 0;">
+
+### <h1>🌟 **_Built with ❤️ for Cloud Professionals_**</h1>  
+**_Your complete resource management solution - from UI to database!_**
+
+
+### ⭐ **Love This Project? Give it a Star!**
+
+If you found this helpful, please star this repo! ⭐
 
 ---
 
-### 🌟 **Built with ❤️ for Cloud Professionals**
 
-Your complete resource management solution - from UI to database!
+</div>
+
+<div align="center">
 
 [⬆ Back to Top](#top) • [Report Issue](https://github.com/Riteshatri/resource-management-project/issues) • [Request Feature](https://github.com/Riteshatri/resource-management-project/issues)
 
-**v1.0.0** • Last Updated: November 26, 2025 • Status: ✅ Production Ready
-
+**v1.0.0** • Last Updated: November 25, 2025 • Status: ✅ Production Ready
 </div>
