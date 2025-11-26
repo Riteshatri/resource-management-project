@@ -1,5 +1,7 @@
 <h1 id="top">🚀 Resource Management Dashboard </h1>
 
+> **📖 [View Full Interactive Documentation & Showcase](https://riteshatri.github.io/resource-management-project/)**
+
 <div align="left">
 
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=flat-square&logo=checkmark)
