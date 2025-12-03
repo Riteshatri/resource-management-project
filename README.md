@@ -1,6 +1,6 @@
 <h1 id="top">🚀 Resource Management Dashboard </h1>
 
-> **📖 [View Full Interactive Documentation & Showcase](https://riteshatri.github.io/resource-management-project/)**
+> **📖 [View Full Interactive Documentation & Showcase](https://riteshatri.github.io/resource-management-database/)**
 
 <div align="left">
 
